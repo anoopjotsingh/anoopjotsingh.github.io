@@ -1,0 +1,259 @@
+ /*****************Global*************************/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #a72608;
+    font-size: 1rem;
+    color: #e8e8e8;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+nav h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    padding: 6px 10px;
+    font-size: 0.9rem;
+}
+nav ul li a{
+    color: #e8e8e8;
+    text-decoration:none;
+}
+.container{
+    display: block;
+    width: 1140px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 850px) {
+
+    /* PHONE */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    .container{
+        width:960px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width:720px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        width:100%;
+    }
+    
+}
+section{
+    padding: 40px 30px;
+}
+/******************Hero********************/
+.hero{
+    height:100vh;
+    background-image: url(../pics/bannermjpic.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+/*************About*****************/
+
+#about .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+#about img{
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 4px 5px 7px #3f2e55;
+}
+#about h2{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+#about p{
+    line-height: 1.6;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.aleft-img{
+    display: flex;
+    padding-top: 2rem;
+}
+.aleft-img img{
+    margin-right: 1rem;
+}
+.about-text{
+    flex-basis: 60%;
+}
+.about-img{
+    flex-basis: 40%;
+}
+/*************Image section*****************/
+.inverse{
+    background: #262626;
+}
+.inverse .container{
+    position: relative;
+}
+.flex-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-img .img1{
+    flex-basis: 30%;
+}
+.flex-img .img2{
+    flex-basis: 40%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px #000;
+}
+.quote-container{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 400px;
+    font-size: 1.5rem;
+}
+.quote-horizontal-position{
+    right: 20%;
+}
+.quote{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    display: block;
+}
+/*********Early Life and Education*********/
+
+#life .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#life img{
+    width: 100%;
+    box-shadow: 4px 5px 7px #3f2e55;
+}
+.life-text{
+    flex-basis: 50%;
+}
+.life-img{
+    flex-basis: 40%;
+}
+#life h2{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+#life p{
+    line-height: 1.6;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*********Major accomplishment*********/
+#accomplishment .quote-horizontal-position{
+    left: 0%;
+}
+.acc-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#accomplishment img{
+    width: 100%;
+    box-shadow: 4px 5px 7px #3f2e55;
+}
+.accomplishment-text{
+    flex-basis: 50%;
+}
+.accomplishment-img{
+    flex-basis: 40%;
+}
+#accomplishment h2{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+#accomplishment p{
+    line-height: 1.6;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.airforce{
+    box-shadow: none !important;
+    position: absolute;
+    bottom: 0;
+    width: 200px !important;
+    right: 0;
+}
+
+/*********Charity Work*********/
+#work .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#work img{
+    width: 100%;
+    box-shadow: 4px 5px 7px #3f2e55;
+}
+.charity-text{
+    flex-basis: 70%;
+    padding: 1rem;
+}
+.charity-img{
+    flex-basis: 15%;
+}
+.charity-text h2{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.charity-text p{
+    line-height: 1.6;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*********Inverse*********/
+footer{
+    padding: 20px 20px;
+}
+footer a{
+    color:#c9c9ff;
+    line-height: 1.7;
+    display: block;
+}
+footer h2{
+    padding-bottom: 1rem;
+}
+.text-center{
+    text-align: center;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
